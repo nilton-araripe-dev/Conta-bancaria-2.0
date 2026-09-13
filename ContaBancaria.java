@@ -20,8 +20,7 @@ class Conta {
     public void deposito(double valor){
         if (valor > 0){
             this.saldo += valor;
-            System.out.println("Deposito no valor de: R$ " + valor 
-            + " Realizado com sucesso na conta de numero: " + getNumero() + " Titular: " + getTitular());
+            System.out.println("Deposito no valor de : R$ " + valor + "realizado com sucesso");
             System.out.println("Saldo atual: R$ " + getSaldo());
         } else {
             System.out.println("O valor do deposito não pode ser negativo");
@@ -47,6 +46,6 @@ public class ContaBancaria {
             c1.saque(200);
             c1.saque(2000);
             c1.deposito(-100);
-            System.out.println(c1.getSaldo());
+            System.out.println("Conta numero: " + c1.getNumero() + " Titular: " + c1.getTitular() + ", Saldo atual: " + c1.getSaldo());
     }
 }
